@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perfil do Davi</title>
+    <style>
+        /* Reset básico */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f0f4f8;
+            color: #4a148c;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+        }
+
+        .card {
+            background-color: #6a1b9a;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(106, 27, 154, 0.3);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #f3e5f5;
+            flex: 1;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(106, 27, 154, 0.6);
+        }
+
+        .img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #ab47bc;
+            margin-bottom: 15px;
+            overflow: hidden;
+            flex-shrink: 0;
+            box-shadow: 0 0 8px #ce93d8;
+            object-fit: cover;
+        }
+
+        .img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .conteudo h3 {
+            margin-bottom: 8px;
+            font-weight: 700;
+            font-size: 1.25rem;
+            text-align: center;
+        }
+
+        .conteudo p {
+            font-size: 1rem;
+            line-height: 1.4;
+            text-align: center;
+            margin-top: 5px;
+            color: #d1c4e9;
+        }
+
+        .lembancas-container {
+            display: flex;
+            flex-direction: column; /* imagens em coluna */
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .lembancas-container img {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(106, 27, 154, 0.5);
+            object-fit: cover;
+            transition: transform 0.2s ease;
+            cursor: pointer;
+        }
+
+        .lembancas-container img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(106, 27, 154, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="conteudo">
+                <h3>Davi Ribeiro Dusilek</h3>
+                <p>Bem-vindo ao meu perfil! Aqui você pode conhecer um pouco sobre mim.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="img">
+                <img src="./a1f0d9f0-f4af-4568-97ee-4db3a447b538.jpg" alt="Foto de Davi" />
+            </div>
+            <div class="conteudo">
+                <h3>Davi Ribeiro Dusilek</h3>
+                <h3>Estudante</h3>
+                <h3>Curitiba</h3>
+                <h3>Idade: 15</h3>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="conteudo">
+                <h3>LEMBRANÇAS</h3>
+                <div class="lembancas-container">
+                    <img src="./familia dusilek.jpg" alt="Família Dusilek" />
+                    <img src="./amigos davi.jpg" alt="Amigos do Davi" />
+                    <img src="./jogos.jpg" alt="Jogos" />
+                </div>
+            </div>
+        </div>
+
+    
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
